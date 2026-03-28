@@ -48,7 +48,7 @@ src/
 
 ### 👤 Author
 
-**Ahsyx** — [github.com/yourusername](https://github.com/Ahsyx)
+**Ahsyx** — [github.com/Ahsyx](https://github.com/Ahsyx)
 
 ---
 
