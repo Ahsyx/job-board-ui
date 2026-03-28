@@ -1,16 +1,57 @@
-# React + Vite
+# Job Board UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A static job board UI built with React and Vite. Job listings displayed in a responsive grid with company logos, salary ranges, and role titles.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 📦 Stack
 
-## React Compiler
+- **React 19** (Vite)
+- **CSS**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+### ✨ Quick start
+```
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### 🖼 Preview
+
+![Job Board UI](screenshot.png)
+
+---
+
+### 🤖 How it works
+
+The `Cards` component receives job data as props and renders each listing. Jobs are stored in an array in `App.jsx` and rendered using `.map()`:
+
+- **Props** — each card receives rate, title, company, logo and background color
+- **Grid layout** — 4 column CSS grid arranges the cards
+- **Dynamic colors** — each card gets a unique background tint via props
+
+---
+
+### 📁 Project structure
+```
+src/
+  components/
+    Cards.jsx       # Job card component with props
+  App.jsx           # Jobs data array and grid layout
+  App.css           # Flexbox, grid and card styling
+```
+
+---
+
+### 👤 Author
+
+**Ahsyx** — [github.com/yourusername](https://github.com/Ahsyx)
+
+---
+
+### 📀 Preview
+
+![screenshot](screenshot.png)
